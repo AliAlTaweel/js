@@ -31,13 +31,13 @@ class autot {
 function fun_1(event) {
   event.preventDefault();
   const uusiAuto = new autot(
-    (rekisterinumero.value = "No Value"),
-    (valmistaja.value = "-"),
-    (malli.value = "-"),
-    (nykyise.value = "-"),
-    (omistaja.value = "-"),
-    (hinta.value = "-"),
-    (vari.value = "-")
+    rekisterinumero.value,
+    valmistaja.value,
+    malli.value,
+    nykyise.value,
+    omistaja.value,
+    hinta.value,
+    vari.value
   );
 
   kAutot.push(uusiAuto);
