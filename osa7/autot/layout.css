@@ -7,20 +7,17 @@
   --primary-color: #959fb2;
   --secondary-color: #e2e2e9;
 }
-.container {
-    
-}
 form {
-    box-shadow: 3px 3px 13px rgb(198, 211, 198);
+  box-shadow: 3px 3px 13px rgb(198, 211, 198);
   width: 300px;
   background: var(--primary-color);
   margin: 20px auto;
   padding: 20px;
   border-radius: 10px;
 }
-h2{
-    opacity: 0.7;
-    text-shadow: 1px 1px 4px black;
+h2 {
+  opacity: 0.7;
+  text-shadow: 1px 1px 4px black;
 }
 .sec {
   display: flex;
@@ -50,4 +47,18 @@ input {
 #btn:hover {
   background: red;
   color: white;
+}
+#table1 {
+  border-collapse: collapse;
+  width: 50%;
+}
+#table1 th,
+#table1 td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+#table1 th {
+  background-color: #f2f2f2;
+  font-weight: bold;
 }

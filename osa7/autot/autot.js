@@ -30,36 +30,54 @@ class autot {
 }
 function fun_1(event) {
   event.preventDefault();
-  const uusiAuto = new autot(rekisterinumero.value, valmistaja.value);
-  console.log(uusiAuto.rekisterinumero);
-  console.log(uusiAuto.valmistaja);
-  kAutot.push(uusiAuto);
-  console.log(kAutot);
-  let newform = document.getElementById("newform");
-  console.log(newform);
-  // newDiv.innerHTML = " ";
-  kAutot.forEach((car) => {
-    let para = document.createElement("div");
-    let text = document.createTextNode(car.rekisterinumero);
-    para.appendChild(text);
-    newform.appendChild(para);
-  });
+  const uusiAuto = new autot(
+    rekisterinumero.value,
+    valmistaja.value,
+    malli.value,
+    nykyise.value,
+    omistaja.value,
+    hinta.value,
+    vari.value
+  );
 
-  // kAutot.forEach((car) => {
-  //   const para = document.createElement("p");
-  //   const text = document.createTextNode("Hello");
-  //   para.appendChild(text);
-  //   newDiv.appendChild(para);
-  // });
+  kAutot.push(uusiAuto);
+
+  const tableRows = document.querySelector("#tbody");
+  tableRows.innerHTML = "";
+
+  kAutot.forEach((car) => {
+    let row = document.createElement("tr");
+
+    let cel1 = document.createElement("td");
+    cel1.textContent = car.rekisterinumero;
+    row.appendChild(cel1);
+
+    let cel2 = document.createElement("td");
+    cel2.textContent = car.valmistaja;
+    row.appendChild(cel2);
+
+    let cel3 = document.createElement("td");
+    cel3.textContent = car.malli;
+    row.appendChild(cel3);
+
+    let cel4 = document.createElement("td");
+    cel4.textContent = car.nykyise;
+    row.appendChild(cel4);
+
+    let cel5 = document.createElement("td");
+    cel5.textContent = car.omistaja;
+    row.appendChild(cel5);
+
+    let cel6 = document.createElement("td");
+    cel6.textContent = car.hinta;
+    row.appendChild(cel6);
+
+    let cel7 = document.createElement("td");
+    cel7.textContent = car.vari;
+    row.appendChild(cel7);
+
+    tbody.appendChild(row);
+  });
 }
 
 form.addEventListener("submit", fun_1);
-
-// const form = document.querySelector("form");
-//       form.addEventListener("submit", (e) => {
-//         e.preventDefault();
-//         const name = document.querySelector("#name").value;
-//         const lastname = document.querySelector("#lastname").value;
-//         console.log(`Name: ${name} Last Name: ${lastname}`);
-//         // Add your logic to send the data to the server or perform any other action
-//       });
