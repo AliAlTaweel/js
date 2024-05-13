@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pancakekone</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="image-container">
+        <img src="pancake.jpeg" alt="Delicious pancakes" />
+        <div class="price-banner"><span id="totalPrice">0 €</span></div>
+      </div>
+      <div class="form-container">
+        <h2>Muokkaa Pancake-tilaustasi</h2>
+        <div class="customization-section">
+          <label for="type">Valitse pancake tyyli:</label>
+          <select id="type">
+            <option value="0">Valitsi ...</option>
+            <option value="5">Klassinen</option>
+            <option value="6">Suklaa</option>
+            <option value="7">Mustikka</option>
+          </select>
+        </div>
+        <div class="customization-section">
+          <p>Valitse lisukkeet (1€ kukin):</p>
+          <input type="checkbox" id="nuts" value="1" />Pähkinät<br />
+          <input type="checkbox" id="bananas" value="1" />Banaani<br />
+          <input type="checkbox" id="syrup" value="1" />Siirappi<br />
+        </div>
+        <div class="customization-section">
+          <p>Lisävaihtoehdot:</p>
+          <input type="checkbox" id="whippedCream" value="2" />Kermavaahto -
+          2€<br />
+          <input type="checkbox" id="iceCream" value="3" />Jäätelö - 3€<br />
+        </div>
+        <div class="nimi">
+          <p id="nimi">Sinun tietosi</p>
+          <div class="nimiInput">
+            <label for="nimiIn">Nimisi</label>
+            <input id="nimiIn" type="text" placeholder="sinun nimi" />
+          </div>
+          <button id="nimiBtn">Tee tilaus</button>
+        </div>
+        <div class="price-display">
+          <p>tyyppi : <span id="tyyppit"> </span></p>
+          <p>lisukkeet :<span id="lisukkeet"> </span></p>
+          <p>Etxrat :<span id="etxrat"> </span></p>
+          <p>Nimi : <span id="tilausNimi"> </span></p>
+          <h3>Kokonaishinta <span id="orderPrice">0€</span></h3>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
