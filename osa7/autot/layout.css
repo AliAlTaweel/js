@@ -51,6 +51,8 @@ input {
 #table1 {
   border-collapse: collapse;
   width: 50%;
+  margin: 10px auto;
+  border-radius: 5px;
 }
 #table1 th,
 #table1 td {
