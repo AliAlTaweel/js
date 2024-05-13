@@ -8,15 +8,15 @@ let henkilö = {
   nimi: "Aleksi",
   ikä: 30,
 };
-//console.log(henkilö);
+console.log(henkilö);
 //=====================================================
 // Tehtävä 2: Olio-ominaisuuksien käyttäminen
 /*
 Käytä ja kirjaa `nimi` ja `ikä` henkilö-oliosta.
 */
 // Kirjoita koodisi tähän
-//console.log(henkilö.nimi);
-//console.log(henkilö.ikä);
+console.log(henkilö.nimi);
+console.log(henkilö.ikä);
 //=====================================================
 // Tehtävä 3: Olion ominaisuuksien muokkaaminen
 /*
@@ -26,7 +26,7 @@ Kirjaa päivitetty olio.
 // Kirjoita koodisi tähän
 henkilö.ikä = 31;
 henkilö.maa = "Kroatia";
-//console.log(henkilö);
+console.log(henkilö);
 //=====================================================
 // Tehtävä 4: Sisäkkäiset oliot
 /*
@@ -42,7 +42,7 @@ let opiskelija = {
   ikä: 22,
   kurssi: "JavaScript",
 };
-//console.log(`Kurssi: ${opiskelija.kurssi}`);
+console.log(`Kurssi: ${opiskelija.kurssi}`);
 //=====================================================
 // Tehtävä 5: Ominaisuuksien poistaminen
 /*
@@ -51,7 +51,7 @@ Odotettu tulos: { nimi: "Aleksi", maa: "Kroatia" }
 */
 // Kirjoita koodisi tähän
 delete henkilö.ikä;
-//console.log(henkilö);
+console.log(henkilö);
 //=====================================================
 // Tehtävä 6: Olion avaimet ja arvot
 /*
@@ -62,8 +62,8 @@ Arvot: Aleksi, Kroatia
 */
 // Kirjoita koodisi tähän
 
-//console.log(`Avaimet : ${Object.keys(henkilö)}`);
-//console.log(`Arvot   : ${Object.values(henkilö)}`);
+console.log(`Avaimet : ${Object.keys(henkilö)}`);
+console.log(`Arvot   : ${Object.values(henkilö)}`);
 //=====================================================
 // Tehtävä 7: Olion metodien käyttäminen
 /*

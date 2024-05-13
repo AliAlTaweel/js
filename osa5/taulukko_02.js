@@ -8,13 +8,13 @@ Odotettu tulos:
 "Taulukon pituus on suurempi tai yhtä suuri kuin 5."
 */
 // Kirjoita funktiosi tähän
-// function myAlphabetLength() {
-//   console.log(`Taulukon myAlphabet pituus: ${myAlphabet.length}`);
-// }
-// myAlphabetLength();
-// if (myAlphabet.length >= 5) {
-//   console.log("Taulukon pituus on suurempi tai yhtä suuri kuin 5.");
-// }
+function myAlphabetLength() {
+  console.log(`Taulukon myAlphabet pituus: ${myAlphabet.length}`);
+}
+myAlphabetLength();
+if (myAlphabet.length >= 5) {
+  console.log("Taulukon pituus on suurempi tai yhtä suuri kuin 5.");
+}
 //=====================================================================
 // Harjoitus 2: Käy läpi taulukko ja kirjaa jokainen alkio sen indeksillä
 const planets = ["Merkurius", "Venus", "Maa", "Mars", "Jupiter"];
@@ -26,9 +26,9 @@ Odotetut tulokset:
 "Planeetta: Jupiter, Indeksi: 4"
 */
 // Kirjoita koodisi tähän
-// planets.forEach((x) => {
-//   console.log(`Planeetta: ${x}, Indeksi: ${planets.indexOf(x)}`);
-// });
+planets.forEach((x) => {
+  console.log(`Planeetta: ${x}, Indeksi: ${planets.indexOf(x)}`);
+});
 
 //=====================================================================
 // Harjoitus 3: Kirjaa taulukon alkiot niiden tyyppeineen
@@ -42,11 +42,11 @@ Odotetut tulokset:
 "Alkio: undefined, Indeksi: 4, Tyyppi: undefined"
 */
 // Kirjoita koodisi tähän
-// wowDatatypes.forEach((x) => {
-//   console.log(
-//     `Alkio: ${x}, Indeksi: ${wowDatatypes.indexOf(x)},Tyyppt: ${typeof x}`
-//   );
-// });
+wowDatatypes.forEach((x) => {
+  console.log(
+    `Alkio: ${x}, Indeksi: ${wowDatatypes.indexOf(x)},Tyyppt: ${typeof x}`
+  );
+});
 //=====================================================================
 // Harjoitus 4: Kirjaa taulukon alkiot ilman silmukkaa
 let myArr = [1, 2, "One", true];
@@ -55,9 +55,9 @@ Kirjaa jokainen alkio tässä taulukossa metodin avulla eli ilman silmukkaa.
 Odotetut tulokset: 1, 2, "One", true
 */
 // Kirjoita koodisi tähän
-// myArr.forEach((x) => {
-//   console.log(x);
-// });
+myArr.forEach((x) => {
+  console.log(x);
+});
 
 //=====================================================================
 // Harjoitus 5: Etsi yhteiset kurssit kahden opiskelijan välillä
@@ -68,7 +68,7 @@ Tunnista ja kirjaa ylös kaikki kurssit, jotka ovat yhteisiä sekä student1Cour
 Odotettu tulos: "Yhteinen kurssi: Ohjelmointi"
 */
 // Kirjoita koodisi tähän
-//console.log(student1Courses.filter((x) => student2Courses.includes(x)));
+console.log(student1Courses.filter((x) => student2Courses.includes(x)));
 //=====================================================================
 // Harjoitus 6: Kirjaa jokainen taulukon alkion kirjain
 let furniture = ["Pöytä", "Tuolit", "Matto"];
@@ -80,9 +80,9 @@ Odotetut tulokset:
 "Kirjaimet 'Matto'-sanassa: M, a, t, t, o"
 */
 // Kirjoita koodisi tähän
-//furniture.forEach((x) => {
-//  console.log(`Kirjaimet "${x}"-sanassa: ${x.split("").join(", ")}`);
-//});
+furniture.forEach((x) => {
+ console.log(`Kirjaimet "${x}"-sanassa: ${x.split("").join(", ")}`);
+});
 //=====================================================================
 // Harjoitus 7: Suodata positiiviset lämpötilat
 let temperatures = [-5, 3, -1, 22, -40, 5, 18];
@@ -92,7 +92,7 @@ Odotettu tulos: [3, 22, 5, 18]
 */
 // Kirjoita koodisi tähän
 
-//console.log(temperatures.filter((x) => x >= 0));
+console.log(temperatures.filter((x) => x >= 0));
 
 //=====================================================================
 // Harjoitus 8: Suodata parittomat vuodet
@@ -106,9 +106,9 @@ getOddYears([2000, 2015, 2018, 2020]) -> [2015]
 
 // Kirjoita koodisi tähän
 
-// Testaus - Poista alta kommenttimerkinnät, niin voit testata funktion toimintaa
-// console.log(getOddYears([2019, 2020, 2021])); // [2019, 2021]
-// console.log(getOddYears([2000, 2015, 2018, 2020])); // [2015]
+Testaus - Poista alta kommenttimerkinnät, niin voit testata funktion toimintaa
+console.log(getOddYears([2019, 2020, 2021])); // [2019, 2021]
+console.log(getOddYears([2000, 2015, 2018, 2020])); // [2015]
 
-//let years = [2000, 2015, 2018, 2020];
-//console.log(years.filter((x) => x % 2 != 0));
+let years = [2000, 2015, 2018, 2020];
+console.log(years.filter((x) => x % 2 != 0));

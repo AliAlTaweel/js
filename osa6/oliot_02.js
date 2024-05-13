@@ -22,9 +22,9 @@ Käytä `kirjaston` ensimmäisen kirjan `otsikko`-ominaisuutta ja tulosta se kon
 Muuta toisen kirjan `julkaisuvuotta` uuteen vuoteen kokoelmassa ja kirjaa päivitetty kirja-olio konsoliin.
 */
 // Sinun koodisi tähän
-// console.log(kirjasto[0].otsikko);
+ console.log(kirjasto[0].otsikko);
 kirjasto[1].julkaisuvuosi = 2024;
-// console.log(kirjasto[1].julkaisuvuosi);
+console.log(kirjasto[1].julkaisuvuosi);
 // ====================================================================================
 /* Tehtävä 3
 Käytä pistenotaatiota lisätäksesi uuden ominaisuuden `lajityypit` (merkkijonotaulukko) ensimmäiseen kirjaan `kirjasto`-taulukossa.
@@ -32,9 +32,9 @@ Käytä hakasulkunotaatiota lisätäksesi boolean-ominaisuuden `onSaatavilla` sa
 */
 // Sinun koodisi tähän
 kirjasto[0].lajityypit = "Satu";
-// console.log(kirjasto[0]);
+console.log(kirjasto[0]);
 kirjasto[1]["onSaatavilla"] = true;
-// console.log(kirjasto[1]);
+console.log(kirjasto[1]);
 
 // ====================================================================================
 /* Tehtävä 4
@@ -54,7 +54,7 @@ const book_1 = new kirja("AAA", "Sami", "2012", "Satu");
 const book_2 = new kirja("BBB", "Annu", "2000", "Dekkari");
 kirjasto.push(book_1);
 kirjasto.push(book_2);
-// console.log(kirjasto);
+console.log(kirjasto);
 // ====================================================================================
 /* Tehtävä 5
 Kirjoita funktio nimeltä `luoKirja`, joka ottaa parametrit `otsikko`, `kirjailija`, `julkaisuvuosi` ja `lajityypit` (taulukko).
